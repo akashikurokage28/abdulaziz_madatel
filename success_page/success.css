@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: Inter, sans-serif;
+
+}
+
+:root {
+    /* Primary Colors */
+    --bg-color: #F2F3F5;
+    --container-bg: #F6F7F8;
+    --accent-bg: #FBFBFC;
+    --primary-color: #D5D9DE;
+
+    /* Secondary Colors */
+    --text-color: #2b3035;
+    --secondary-color: #505459;
+
+    /* Accent Colors */
+    --accent-color: #C8102E;
+    --gradient-accent-color: linear-gradient(to bottom, #C8102E, #620817);
+
+    /* Custom Transition */
+    --custom-transition: cubic-bezier(.45,0,.12,.6);
+
+    /* Font Size Variables */
+    --xxl-font: 2.5rem; /* 40px */
+    --xl-font: 2.25rem; /* 36px */
+    --l-font: 2rem;     /* 32px */
+    --m-font: 1.75rem;  /* 28px */
+    --s-font: 1.5rem;   /* 24px */
+    --xs-font: 1.25rem;  /* 20px */
+    --xxs-font: 1rem;   /* 16px */
+    --xxxs-font: 0.75rem; /* 12px */
+
+    /* Box Shadow Variables */
+    --lg-outer-shadow: 2px 2px 4px #D5D5D6, 
+                     -2px -2px 4px #fff; 
+
+    --sm-outer-shadow: 1px 1px 2px #D5D5D6, 
+                     -1px -1px 2px #fff; 
+
+    --inner-shadow: inset 2px 2px 4px #D5D5D6, 
+                    inset -2px -2px 4px #fff; 
+
+    /* Spacing Variables (Divisible by 4px) */
+    --xxs-4px-spacing: 0.25rem;  /* 4px */
+    --xs-4px-spacing: 0.5rem;    /* 8px */
+    --sm-4px-spacing: 0.75rem;   /* 12px */
+    --md-4px-spacing: 1rem;      /* 16px */
+    --lg-4px-spacing: 1.5rem;    /* 24px */
+
+    /* Spacing Variables (Divisible by 8px) */
+    --xxs-8px-spacing: 0.5rem;   /* 8px */
+    --xs-8px-spacing: 1rem;      /* 16px */
+    --sm-8px-spacing: 1.5rem;    /* 24px */
+    --md-8px-spacing: 2rem;      /* 32px */
+    --lg-8px-spacing: 3rem;      /* 48px */
+
+    /* Letter Spacing Variables */
+    --xs-letter-spacing: -0.5px; /* For 16px Font size */
+    --sm-letter-spacing: -0.7px; /* For 24px Font size */
+    --md-letter-spacing: -1px; /* For 32px Font size */
+    --lg-letter-spacing: 1.2px; /* For 40px Font size */
+}
+
+body{
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+main i{
+    font-size: 6.25rem;
+    background: var(--gradient-accent-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+main .success-message{
+    display: grid;
+    gap: 8px;
+}
+
+main .success-message h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--accent-color);
+    letter-spacing: var(--xs-letter-spacing);
+    padding-top: 1.5rem;
+}
+
+main .success-message p{
+    max-width: 28rem;
+    font-size: .875rem;
+    font-weight: 300;
+    color: var(--secondary-color);
+}
+
+main a{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-top: 16px;
+}
