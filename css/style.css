@@ -375,6 +375,14 @@ aside .profile-info-container{
     color: var(--secondary-color);
 }
 
+.social-media-btns a svg#upwork-icon{
+    width: 20px;
+}
+
+.social-media-btns a svg#upwork-icon path{
+    fill: var(--secondary-color);
+}
+
 .social-media-btns a:hover,
 .social-media-btns a:focus{
     color: var(--accent-color);
