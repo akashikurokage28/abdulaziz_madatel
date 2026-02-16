@@ -907,7 +907,7 @@ section h3{
 
 .portfolio-items .portfolio-img img{
     width: 100%;
-    height: 100%;
+    aspect-ratio: 16/9;
     object-fit: cover;
     transition: 1s var(--custom-transition);
 }
